@@ -41,11 +41,11 @@
             @Html.DisplayFor(modelItem => item.OgrAdres)
         </td>
         <td>
-            @Html.ActionLink("Düzenle", "Edit", new { id=item.OgrID }) |
-            @Html.ActionLink("Detaylar", "Details", new { id=item.OgrID }) |
-            @Html.ActionLink("Sil", "Delete", new { id=item.OgrID })
+            @Html.ActionLink("Düzenle", "Edit", new { id = item.OgrID }, new { @class = "btn btn-success" }) |
+            @Html.ActionLink("Detaylar", "Details", new { id = item.OgrID }, new { @class = "btn btn-primary" }) |
+            @Html.ActionLink("Sil", "Delete", new { id = item.OgrID }, new { @class = "btn btn-danger" }) |
         </td>
     </tr>
-}
+}   
 
 </table>

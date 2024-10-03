@@ -12,7 +12,7 @@ namespace Mvc_ogrenci_kayit.Controllers
 {
     public class default1Controller : Controller
     {
-        private Database2Entities db = new Database2Entities();
+        public Database2Entities db = new Database2Entities();
 
         // GET: default1
         public ActionResult Index()

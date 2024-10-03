@@ -4,10 +4,9 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h4>Öğrenci Detay</h4>
 
 <div>
-    <h4>Table</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -34,13 +33,13 @@
             @Html.DisplayFor(model => model.OgrMail)
         </dd>
 
-        <dt>
+        @*<dt>
             @Html.DisplayNameFor(model => model.OgrFotograf)
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.OgrFotograf)
-        </dd>
+        </dd>*@
 
         <dt>
             @Html.DisplayNameFor(model => model.OgrAdres)
@@ -53,6 +52,9 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.OgrID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Düzenle", "Edit", new { id = Model.OgrID }) |
+    @Html.ActionLink("Öğrenci Listesi", "Index")
 </p>
+<dt>
+    <img src="@Model.OgrFotograf" /> 
+</dt>

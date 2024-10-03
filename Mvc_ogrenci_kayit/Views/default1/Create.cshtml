@@ -17,7 +17,8 @@
         <div class="form-group">
             @Html.LabelFor(model => model.OgrAD, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.OgrAD, new { htmlAttributes = new { @class = "form-control" } })
+                @*@Html.EditorFor(model => model.OgrAD, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.TextBoxFor(model => model.OgrAD, new { @class = "form-control", PlaceHolder = "Adınız ", Required = "" })
                 @Html.ValidationMessageFor(model => model.OgrAD, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -25,7 +26,8 @@
         <div class="form-group">
             @Html.LabelFor(model => model.OgrSoyad, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.OgrSoyad, new { htmlAttributes = new { @class = "form-control" } })
+                @*@Html.EditorFor(model => model.OgrSoyad, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.TextBoxFor(model => model.OgrSoyad, new { @class = "form-control", PlaceHolder = "Soyadınızı Girin ", Required = "" })
                 @Html.ValidationMessageFor(model => model.OgrSoyad, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -33,7 +35,8 @@
         <div class="form-group">
             @Html.LabelFor(model => model.OgrMail, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.OgrMail, new { htmlAttributes = new { @class = "form-control" } })
+                @*@Html.EditorFor(model => model.OgrMail, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.TextBoxFor(model => model.OgrMail, new { @class = "form-control", PlaceHolder = "Mail Adresi ", Required = "" })
                 @Html.ValidationMessageFor(model => model.OgrMail, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -41,7 +44,8 @@
         <div class="form-group">
             @Html.LabelFor(model => model.OgrFotograf, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.OgrFotograf, new { htmlAttributes = new { @class = "form-control" } })
+                @*@Html.EditorFor(model => model.OgrFotograf, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.TextBoxFor(model => model.OgrFotograf, new { @class = "form-control", PlaceHolder = "Fotoğraf Link Adresi" })
                 @Html.ValidationMessageFor(model => model.OgrFotograf, "", new { @class = "text-danger" })
             </div>
         </div>
